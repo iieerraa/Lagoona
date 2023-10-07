@@ -4,7 +4,7 @@
   src: local('Muller-Regular'),
     url('../fonts/MullerRegular.woff2') format('woff2'),
     url('../fonts/MullerRegular.woff') format('woff');
-  font-weight: 500;
+  font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
@@ -13,7 +13,7 @@
   src: local('Muller-Medium'),
     url('../fonts/MullerMedium.woff2') format('woff2'),
     url('../fonts/MullerMedium.woff') format('woff');
-  font-weight: 400;
+  font-weight: 500;
   font-style: normal;
   font-display: swap;
 }
@@ -92,6 +92,9 @@ body{
   line-height: normal;
   padding: 13px 20px;
 }
+address{
+  font-style: normal;
+}
 
 /* header */
 .header-up{
@@ -160,7 +163,7 @@ body{
 }
 .offer-card{
   border-radius: 15px;
-  background-color: #2c2c2c;
+  background-color: #2C2C2C;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -265,7 +268,6 @@ body{
   font-size: 20px;
   font-weight: 500;
   line-height: 200%;
-  margin-bottom: 15px;
 }
 .services-item-link{
   margin-right: 5px;
@@ -372,11 +374,11 @@ body{
 .last-item{
   justify-content: center;
   align-items: flex-end;
-  background-color: #2c2c2c;
+  background-color: #2C2C2C;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-image: url(../img/hotel_all.png);
+  background-image: url('../img/hotel_all.png');
   padding: 27px 45px 27px;
 }
 .all-var{
@@ -388,4 +390,163 @@ body{
   font-weight: 500;
   line-height: 200%;
   margin-right: 5px;
+}
+
+/* want-tour */
+.container-want-tour{
+  border-radius: 15px;
+  background: #E9E9E9;
+  padding: 45px;
+}
+.want-tour-title{
+  padding-left: 0;
+  margin-left: -5px;
+}
+.want-tour-form{
+  justify-content: space-between;
+  border-radius: 15px;
+  background: #FFF;
+  padding: 32px 28px;
+}
+.form-options{
+  justify-content: space-between;
+  gap: 41px;
+}
+.select{
+  width: 170px;
+}
+.lable-select{
+  font-size: 12px;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 15px;
+}
+.form-select{
+  border: none;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: normal;
+  margin-left: -4px;
+  width: 170px;
+}
+.lable-input{
+  width: 120px;
+}
+.form-date{
+  border: none;
+  width: 120px;
+}
+.form-num{
+  border: none;
+  border-bottom: 1px solid #E9E9E9;
+
+  font-size: 16px;
+  font-weight: 400;
+  line-height: normal;
+
+  width: 120px;
+}
+.form-btn{
+  padding: 13px 30px;
+}
+
+/* contacts */
+.container-contacts{
+  margin-bottom: 40px;
+}
+.contacts-container{
+  justify-content: space-between;
+  gap: 52px;
+  border-radius: 15px;
+  background: #FFF;
+  padding: 45px;
+}
+.left-contacts-container{
+  min-width: 375px;
+}
+.contacts-list{
+  margin-bottom: 45px;
+}
+.contacts-item{
+  justify-content: space-between;
+  gap: 45px;
+  border-bottom: 1px solid #E9E9E9;
+  padding-top: 25px;
+  padding-bottom: 23px;
+}
+.contacts-item:first-child{
+  padding-top: 0;
+}
+.contacts-item-title{
+  font-size: 20px;
+  font-weight: 700;
+  line-height: normal;
+  width: 100px;
+}
+.contacts-item-descr{
+  align-items: start;
+  flex-wrap: wrap;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 150%;
+  width: 230px;
+}
+.contacts-item-descr a{
+  color: #C93;
+}
+.contacts-item-descr span{
+  color: #999;
+}
+.build-route{
+  padding: 30px;
+}
+.right-contacts-container{
+  flex-grow: 1;
+  border-radius: 10px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url('../img/lagoona_img.jpg');
+  /* width: 100%; */
+}
+
+/* footer */
+.footer-container{
+  justify-content: space-between;
+  border-radius: 15px;
+  background: #333;
+  background-position: 80% bottom;
+  background-repeat: no-repeat;
+  background-image: url('../img/lagoona_sun.png');
+  margin-bottom: 0;
+  padding: 45px;
+}
+.footer-info{
+  color: #FFF;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 190%;
+  margin-right: 125px;
+  max-width: 302px;
+}
+.footer-info p{
+  margin-bottom: 38px;
+}
+.footer-info a{
+  color: #C93;
+}
+.footer-address{
+  flex-direction: column;
+  gap: 15px;
+  color: #FFF;
+  font-size: 16px;
+  font-weight: 400;
+  margin-right: 269px;
+}
+.telephone-item, .email-item{
+  color: #C93;
+  line-height: 150%;
+}
+.social-item:not(:last-child){
+  margin-bottom: 20px;
 }

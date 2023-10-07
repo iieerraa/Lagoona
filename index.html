@@ -452,54 +452,137 @@
         </ul>
       </div>
     </section>
-    <!-- <section id="want-tour" class="want-tour">
-      <div class="container">
+    <section id="want-tour" class="want-tour">
+      <div class="container-want-tour container">
+        <h2 class="want-tour-title title-container">Хочу тур</h2>
+        <form class="want-tour-form flex" action="https://jsonplaceholder.typicode.com/posts" method="post">
+          <div class="form-options flex">
+            <label class="select" for="depar-city">
+              <p class="lable-select">Город вылета</p>
+              <select class="form-select" id="depar-city" name="Departure city" required>
+                <option value="" disabled selected>Выберетие город</option>
+                <option value="Paris">Париж</option>
+                <option value="Rome">Рим</option>
+                <option value="New York">Нью-Йорк</option>
+                <option value="London">Лондон</option>
+                <option value="Frankfurt">Франкфурт</option>
+                <option value="Istanbul">Стамбул</option>
+                <option value="Bangkok">Бангкок</option>
+                <option value="Tokyo">Токио</option>
+                <option value="Athens">Афины</option>
+              </select>
+            </label>
+            <label class="select" for="country">
+              <p class="lable-select">Страна</p>
+              <select class="form-select" id="country" name="Country" required>
+                <option value="" disabled selected>Выберите страну</option>
+                <option value="Spain">Испания</option>
+                <option value="France">Франция</option>
+                <option value="Italy">Италия</option>
+                <option value="United States">Соединенные Штаты</option>
+                <option value="United Kingdom">Соединенное Королевство</option>
+                <option value="Germany">Германия</option>
+                <option value="Turkey">Турция</option>
+                <option value="Thailand">Таиланд</option>
+                <option value="Greece">Греция</option>
+                <option value="Japan">Япония</option>
+              </select>
+            </label>
+            <label class="lable-input" for="date">
+              <p class="lable-select">Дата прибытия</p>
+              <input class="form-date" type="date" id="date" name="date" value="2023-09-10" required>
+            </label>
+            <label class="lable-input" for="nights">
+              <p class="lable-select">Ночей</p>
+              <input class="form-num" type="number" id="nights" name="nights" min="1" max="20" value="6" required>
+            </label>
+            <label class="lable-input" for="tourist">
+              <p class="lable-select">Туристы</p>
+              <input class="form-num" type="number" id="tourist" name="tourist" min="1" max="20" value="2" required>
+            </label>
+          </div>
+          <button class="form-btn btn">Найти</button>
+        </form>
 
       </div>
-    </section> -->
-    <!-- <section id="#contacts" class="contacts">
-      <div class="container">
+    </section>
+    <section id="contacts" class="contacts">
+      <div class="container-contacts container">
+        <h2 class="contacts-title title-container">Контакты</h2>
+        <div class="contacts-container flex">
+          <div class="left-contacts-container">
+            <address>
+              <ul class="contacts-list">
+                <li class="contacts-item flex">
+                  <h3 class="contacts-item-title">Адрес</h3>
+                  <p class="contacts-item-descr flex">Москва, улица Юности, дом 5&nbsp;строение&nbsp;4, офис&nbsp;2</p>
+                </li>
+                <li class="contacts-item flex">
+                  <h3 class="contacts-item-title">Телефоны</h3>
+                  <div class="contacts-item-descr flex">
+                    <a href="tel:+74995356434">+7&nbsp;499 535-64-34</a>
+                    <a href="tel:+74950050544">+7&nbsp;495 005-05-44</a>
+                  </div>
+                </li>
+                <li class="contacts-item flex">
+                  <h3 class="contacts-item-title">Email</h3>
+                  <div class="contacts-item-descr flex">
+                    <a href="mailto:lg.oona@mail.ru">lg.oona@mail.ru</a>
+                    <span>по&nbsp;вопросам бронирования</span>
+                    <a href="mailto:hotels.ln@mail.ru">hotels.ln@mail.ru</a>
+                    <span>по&nbsp;вопросам бронирования</span>
+                  </div>
+                </li>
+                <li class="contacts-item flex">
+                  <h3 class="contacts-item-title">График</h3>
+                  <p class="contacts-item-descr flex">Понедельник-пятница, с&nbsp;10:00 до&nbsp;19:00</p>
+                </li>
+              </ul>
+            </address>
+            <button class="build-route btn">Построить маршрут</button>
+          </div>
+          <div class="right-contacts-container">
 
+          </div>
+        </div>
       </div>
-    </section> -->
+    </section>
   </main>
 
   <footer class="footer">
-    <div class="container" hidden>
+    <div class="footer-container container flex">
       <div class="footer-info">
-        <h3 class="footer-info-company">
+        <p class="footer-info-company">
           &copy;&nbsp;2012&ndash;2020 Управляющая компания Объединённой сети &laquo;Лагуна Хотелс&raquo;
-        </h3>
+        </p>
         <p class="footer-info-disclaimer">
           Представленная на&nbsp;сайте информация носит справочный характер и&nbsp;не&nbsp;является публичной офертой
         </p>
         <a href="#" class="footer-info-agreement">Пользовательское соглашение</a>
       </div>
-      <div class="footer-address">
-        <address>
-          <p class="address">11710, улица Юности, дом 5&nbsp;строение&nbsp;4, офис&nbsp;2</p>
-          <ul class="telephone-list">
-            <li class="telephone-item">
-              <a href="tel:+74995356434">+7&nbsp;499 535-64-34</a>
-            </li>
-            <li class="telephone-item">
-              <a href="tel:+74950050544">+7&nbsp;495 005-05-44</a>
-            </li>
-          </ul>
-          <ul class="email-list">
-            <li class="email-item">
-              <a href="mailto:lg.oona@mail.ru">lg.oona@mail.ru</a>
-            </li>
-            <li class="email-item">
-              <a href="mailto:hotels.ln@mail.ru">hotels.ln@mail.ru</a>
-            </li>
-          </ul>
-        </address>
-      </div>
+      <address  class="footer-address flex">
+        <p class="address">11710, улица Юности, дом 5&nbsp;строение&nbsp;4, офис&nbsp;2</p>
+        <ul class="telephone-list">
+          <li class="telephone-item">
+            <a href="tel:+74995356434">+7&nbsp;499 535-64-34</a>
+          </li>
+          <li class="telephone-item">
+            <a href="tel:+74950050544">+7&nbsp;495 005-05-44</a>
+          </li>
+        </ul>
+        <ul class="email-list">
+          <li class="email-item">
+            <a href="mailto:lg.oona@mail.ru">lg.oona@mail.ru</a>
+          </li>
+          <li class="email-item">
+            <a href="mailto:hotels.ln@mail.ru">hotels.ln@mail.ru</a>
+          </li>
+        </ul>
+      </address>
       <div class="footer-social">
         <ul class="social-list">
           <li class="social-item">
-            <a href="https://www.tripadvisor.ru/">
+            <a href="https://www.tripadvisor.ru/" target="_blank">
               <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25" fill="none">
                 <path
                   d="M17.1779 11.7844C16.3343 11.7844 15.6441 12.449 15.6441 13.2926C15.6441 14.1362 16.3343 14.8263 17.1523 14.8263C17.9959 14.8263 18.6605 14.1362 18.6605 13.3182C18.6861 12.449 18.0214 11.7844 17.1779 11.7844ZM17.1779 14.0595C16.7433 14.0595 16.411 13.7272 16.411 13.2926C16.411 12.858 16.7433 12.5257 17.1779 12.5257C17.6124 12.5257 17.9447 12.8836 17.9447 13.2926C17.9447 13.7272 17.5869 14.0595 17.1779 14.0595Z"
@@ -523,7 +606,7 @@
             </a>
           </li>
           <li class="social-item">
-            <a href="https://www.ok.ru/">
+            <a href="https://www.ok.ru/" target="_blank">
               <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25" fill="none">
                 <path
                   d="M10.7106 8.32552C10.7106 9.35607 11.546 10.1916 12.5766 10.1916C13.6071 10.1916 14.4426 9.35607 14.4426 8.32552C14.4426 7.29496 13.6071 6.4595 12.5766 6.4595C11.546 6.4595 10.7106 7.29496 10.7106 8.32552Z"
@@ -535,7 +618,7 @@
             </a>
           </li>
           <li class="social-item">
-            <a href="https://www.vk.ru/">
+            <a href="https://www.vk.ru/" target="_blank">
               <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25" fill="none">
                 <g clip-path="url(#clip0_370726_103)">
                   <path
