@@ -29,6 +29,14 @@
   font-display: swap;
 }
 
+/* --variable */
+:root {
+  --color-01: #FFF;
+  --color-02: #C93;
+  --color-03: #F0BF5F;
+  --color-04: #A47312;
+}
+
 /* reset */
 html {
   box-sizing: border-box;
@@ -99,10 +107,10 @@ body {
 }
 
 .btn {
-  background-color: #FFF;
+  background-color: var(--color-01);
   border-radius: 10px;
-  border: 1px solid #C93;
-  color: #C93;
+  border: 1px solid var(--color-02);
+  color: var(--color-02);
   font-size: 16px;
   font-weight: 400;
   line-height: normal;
@@ -113,12 +121,12 @@ body {
 .btn:focus-visible,
 .btn:hover {
   outline: none;
-  background-color: #C93;
-  color: #FFF;
+  background-color: var(--color-02);
+  color: var(--color-01);
 }
 
 .btn:active {
-  background-color: #A47312;
+  background-color: var(--color-04);
 }
 
 address {
@@ -139,7 +147,7 @@ address {
 
 .header-logo:focus-visible {
   outline: none;
-  outline: 1px solid #CC9933;
+  outline: 1px solid var(--color-02);
   outline-offset: 5px;
 }
 
@@ -159,21 +167,21 @@ address {
 .header-tel:focus-visible {
   color: #CC9933;
   outline: none;
-  outline: 1px solid #C93;
+  outline: 1px solid var(--color-02);
   outline-offset: 5px;
 }
 
 .header-tel:hover {
-  color: #CC9933;
+  color: var(--color-02);
 }
 
 .header-tel:active {
-  color: #A47312;
+  color: var(--color-04);
 }
 
 .link-area {
   align-items: center;
-  color: #C93;
+  color: var(--color-02);
   font-size: 16px;
   font-weight: 400;
   line-height: normal;
@@ -185,7 +193,7 @@ address {
 }
 
 .arrow-area {
-  fill: #CC9933;
+  fill: var(--color-02);
   margin-right: 5px;
 }
 
@@ -194,30 +202,30 @@ address {
 }
 
 .link-area:focus-visible {
-  outline: 1px solid #CC9933;
+  outline: 1px solid var(--color-02);
   outline-offset: 5px;
 }
 
 .link-area:hover {
-  color: #F0BF5F;
+  color: var(--color-03);
 }
 
 .link-area:hover svg.arrow-area {
-  fill: #F0BF5F;
+  fill: var(--color-03);
 }
 
 .link-area:active {
-  color: #A47312;
+  color: var(--color-04);
 }
 
 .link-area:active svg.arrow-area {
-  fill: #A47312;
+  fill: var(--color-04);
 }
 
 .header-down {
   justify-content: space-between;
   align-items: center;
-  background: #FFF;
+  background: var(--color-01);
   border-radius: 15px;
   padding: 14px 45px;
 }
@@ -243,17 +251,17 @@ address {
 
 .header-link:focus-visible {
   outline: none;
-  outline: 1px solid #CC9933;
+  outline: 1px solid var(--color-02);
   outline-offset: 5px;
-  color: #CC9933;
+  color: var(--color-02);
 }
 
 .header-link:hover {
-  color: #CC9933;
+  color: var(--color-02);
 }
 
 .header-link:active {
-  color: #A47312;
+  color: var(--color-04);
 }
 
 .header-btn {
@@ -308,7 +316,7 @@ address {
 }
 
 .offer-title {
-  color: #FFF;
+  color: var(--color-01);
   font-size: 40px;
   font-weight: 700;
   line-height: normal;
@@ -316,7 +324,7 @@ address {
 }
 
 .offer-price {
-  color: #FFF;
+  color: var(--color-01);
   font-size: 20px;
   font-weight: 400;
   line-height: normal;
@@ -327,7 +335,7 @@ address {
   align-self: flex-start;
   align-items: center;
   gap: 5px;
-  color: #F0BF5F;
+  color: var(--color-03);
   font-size: 16px;
   font-weight: 400;
   line-height: normal;
@@ -348,7 +356,7 @@ address {
   left: 0;
   right: 0;
   bottom: 0;
-  outline: 1px solid #C93;
+  outline: 1px solid var(--color-02);
   outline-offset: 10px;
   opacity: 0;
 }
@@ -362,11 +370,11 @@ address {
 }
 
 .offer-more:active {
-  color: #FFF;
+  color: var(--color-01);
 }
 
 .offer-three-title {
-  color: #FFF;
+  color: var(--color-01);
   font-size: 60px;
   font-weight: 700;
   line-height: normal;
@@ -374,7 +382,7 @@ address {
 }
 
 .offer-three-price {
-  color: #FFF;
+  color: var(--color-01);
   font-size: 30px;
   font-weight: 400;
   line-height: normal;
@@ -402,7 +410,7 @@ address {
   border-radius: 15px;
   background-position: top center;
   background-repeat: no-repeat;
-  background-color: #FFF;
+  background-color: var(--color-01);
   width: 573px;
   padding: 190px 126px 35px 45px;
 }
@@ -429,14 +437,14 @@ address {
 }
 
 .services-item-title {
-  color: #C93;
+  color: var(--color-02);
   font-size: 20px;
   font-weight: 500;
   line-height: 200%;
 }
 
 .services-item-link svg {
-  stroke: #C93;
+  stroke: var(--color-02);
 }
 
 .services-item-link svg {
@@ -450,17 +458,17 @@ address {
   left: 0;
   right: 0;
   bottom: 0;
-  outline: 1px solid #C93;
+  outline: 1px solid var(--color-02);
   outline-offset: 10px;
   opacity: 0;
 }
 
 .services-item-link:hover .services-item-title {
-  color: #F0BF5F;
+  color: var(--color-03);
 }
 
 .services-item-link:hover svg {
-  stroke: #F0BF5F;
+  stroke: var(--color-03);
   transform: translateX(5px);
 }
 
@@ -474,11 +482,11 @@ address {
 }
 
 .services-item-link:active .services-item-title {
-  color: #A47312;
+  color: var(--color-04);
 }
 
 .services-item-link:active svg {
-  stroke: #A47312;
+  stroke: var(--color-04);
 }
 
 .services-item-descr {
@@ -497,7 +505,7 @@ address {
   border-radius: 15px;
   background-position: 45px 40px;
   background-repeat: no-repeat;
-  background-color: #FFF;
+  background-color: var(--color-01);
   width: 276px;
   padding: 116px 42px 35px 45px;
 }
@@ -547,7 +555,7 @@ address {
 }
 
 .accommodation-item {
-  background-color: #FFF;
+  background-color: var(--color-01);
   border-radius: 15px;
   width: 374px;
 }
@@ -615,7 +623,7 @@ address {
 .link-all-var {
   align-items: center;
   gap: 5px;
-  color: #FFF;
+  color: var(--color-01);
   font-size: 20px;
   font-weight: 500;
   line-height: 200%;
@@ -637,7 +645,7 @@ address {
   left: 0;
   right: 0;
   bottom: 0;
-  outline: 1px solid #C93;
+  outline: 1px solid var(--color-02);
   outline-offset: 10px;
   opacity: 0;
 }
@@ -665,7 +673,7 @@ address {
 .want-tour-form {
   justify-content: space-between;
   border-radius: 15px;
-  background: #FFF;
+  background: var(--color-01);
   padding: 32px 28px;
 }
 
@@ -727,7 +735,7 @@ address {
   justify-content: space-between;
   gap: 52px;
   border-radius: 15px;
-  background: #FFF;
+  background: var(--color-01);
   padding: 45px;
 }
 
@@ -768,23 +776,23 @@ address {
 }
 
 .contacts-item-descr a {
-  color: #C93;
+  color: var(--color-02);
   transition: color 0.3s ease-in-out;
 }
 
 .contacts-item-descr a:focus-visible {
   outline: none;
-  outline: 1px solid #C93;
+  outline: 1px solid var(--color-02);
   outline-offset: 1px;
 }
 
 .contacts-item-descr a:hover {
-  color: #F0BF5F;
+  color: var(--color-03);
 }
 
 .contacts-item-descr a:active {
   outline: none;
-  color: #A47312;
+  color: var(--color-04);
 }
 
 .contacts-item-descr span {
@@ -817,7 +825,7 @@ address {
 }
 
 .footer-info {
-  color: #FFF;
+  color: var(--color-01);
   font-size: 16px;
   font-weight: 400;
   line-height: 190%;
@@ -830,13 +838,13 @@ address {
 }
 
 .footer-info a {
-  color: #C93;
+  color: var(--color-02);
 }
 
 .footer-address {
   flex-direction: column;
   gap: 15px;
-  color: #FFF;
+  color: var(--color-01);
   font-size: 16px;
   font-weight: 400;
   margin-right: 269px;
@@ -844,7 +852,7 @@ address {
 
 .telephone-item,
 .email-item {
-  color: #C93;
+  color: var(--color-02);
   line-height: 150%;
 }
 
@@ -862,20 +870,20 @@ address {
 .telephone-item a:focus-visible,
 .email-item a:focus-visible {
   outline: none;
-  outline: 1px solid #C93;
+  outline: 1px solid var(--color-02);
   outline-offset: 2px;
 }
 
 .footer-info-agreement:hover,
 .telephone-item a:hover,
 .email-item a:hover {
-  color: #F0BF5F;
+  color: var(--color-03);
 }
 
 .footer-info-agreement:active,
 .telephone-item a:active,
 .email-item a:active {
-  color: #A47312;
+  color: var(--color-04);
   outline: none;
 }
 
@@ -889,13 +897,13 @@ address {
 }
 
 .ico-link:focus-visible path {
-  fill: #C93;
+  fill: var(--color-02);
 }
 
 .ico-social:hover path {
-  fill: #C93;
+  fill: var(--color-02);
 }
 
 .ico-social:active path {
-  fill: #A47312;
+  fill: var(--color-04);
 }
